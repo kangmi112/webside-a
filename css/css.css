@@ -1,0 +1,163 @@
+/* .di           底 */
+/* .box-big      区块 */
+/* h1            标题 */
+/* .left-line    正文 */
+/* .hengxian     上下横线 */
+/* .di-button    按钮区域 */
+/* .button-small 右下角小按钮 */
+/* .p-small      小字 */
+
+/* 标签 */
+body {
+  z-index: top;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+b {
+  margin-bottom: 4px;
+  color: white;
+}
+h1 {
+  position: relative;
+  left: 15px;
+  bottom: 0.2em;
+  display: flex;
+  margin-bottom: 0;
+  color: white;
+}
+p {
+  margin: 0.1em;
+  color: black;
+}
+/* <a> */
+a {
+  width: fit-content;
+  text-decoration: none;
+  color: rgb(90, 170, 230);
+  background-image: linear-gradient(rgb(90, 170, 230), rgb(90, 170, 230));
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0 1px;
+  transition: background-size 0.3s ease-in-out normal 0s;
+  cursor: pointer;
+}
+a:hover {
+  background-size: 100% 1px;
+}
+a:active {
+  color: rgb(120, 199, 255);
+}
+/* class */
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #6b6b6b;
+  z-index: 99999;
+  font-size: 12px;
+}
+.son {
+  position: absolute;
+  left: 15px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12.5px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.di {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex: 1;
+  height: calc(+ 30px);
+  margin: 15px auto;
+  position: relative;
+}
+.biaoti {
+  left: 0;
+  border-bottom: 2px solid #d43744;
+  width: calc(100% - 30px);
+  margin: auto;
+  text-indent: -8%;
+  font-size: 12px;
+}
+.left-line {
+  border-left-color: #d43744;
+  border-left-style: solid;
+  border-left-width: 2px;
+  padding-left: 10px;
+  margin: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.qukuai {
+  margin: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.dian {
+  margin: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.box-big {
+  display: block;
+}
+.box-top {
+  padding-top: 0.6em;
+}
+.di-button {
+  width: 87%;
+  margin: auto;
+}
+.p-small {
+  font-size: 12px;
+  margin: 0;
+}
+.button-small {
+  position: relative;
+  z-index: 2;
+  left: 0;
+  height: 1.8em;
+  width: 8.5em;
+  border-radius: 0.35em;
+  background-color: #6f2c32;
+  border: none;
+  float: right;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease;
+}
+.button-small:active {
+  background-color: rgb(241, 154, 168);
+}
+li::marker {
+  color: #d43744;
+}
+/* 不同端适配 */
+@media (min-width: 768px) {
+  body {
+    background-image: url("https://www.helloimg.com/i/2025/01/20/678ddfa962cbf.jpg");
+  }
+  .top {
+    background-color: #a03d46;
+  }
+  .di {
+    backdrop-filter: blur(1em);
+  }
+  .biaoti {
+    border: none;
+  }
+  h1 {
+    bottom: 0;
+  }
+  .left-line {
+    margin-top: 12px;
+  }
+  .dian {
+    margin-top: 12px;
+  }
+}
