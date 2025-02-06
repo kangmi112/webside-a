@@ -137,7 +137,7 @@ a:active {
 li::marker {
   color: #d43744;
 }
-/* 不同端适配 */
+/* 适配 */
 @media (min-width: 768px) {
   h1 {
     bottom: 0;
