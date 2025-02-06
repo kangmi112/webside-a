@@ -139,18 +139,6 @@ li::marker {
 }
 /* 不同端适配 */
 @media (min-width: 768px) {
-  body {
-    background-image: url("https://www.helloimg.com/i/2025/01/20/678ddfa962cbf.jpg");
-  }
-  .top {
-    background-color: #a03d46;
-  }
-  .di {
-    backdrop-filter: blur(1em);
-  }
-  .biaoti {
-    border: none;
-  }
   h1 {
     bottom: 0;
   }
